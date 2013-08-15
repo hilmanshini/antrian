@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="queueapp.entitylib.CustomerOrderPending" table="customer_order_pending">
+        <composite-id>
+            <key-property name="numberCustomerOrder" column="number_customer_order"/>
+            <key-property name="dateCustomerOrder" column="date_customer_order"/>
+        </composite-id>
+    </class>
+  
+</hibernate-mapping>
